@@ -1,1 +1,11 @@
+**/target
+**target/
+**/text
+**text/
+**data/
+**/data
+**/uni
+**uni/
 /target
+materials/
+/materials

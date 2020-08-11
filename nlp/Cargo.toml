@@ -1,16 +1,63 @@
 [package]
-name = "ml"
+name = "nlp"
 version = "0.1.0"
 authors = ["Chris P <chrisp1877@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# to generate info about people, generate connections, generate real sentences, parse sentences, etc.
 [dependencies]
+#divh = { path="../../back/api/hyper/" }
+#common = { path="../../back/common/" }
+#db = { path="../../back/db/" }
+tokenizers="*"
+select="*"
+tch="*"
+#scraper="*"
+#arrow="*"
+#datafusion="*"
+serde={version="*", features=["derive"]}
+serde_json="*"
+nom="*"
 nalgebra="*"
 rayon="*"
 csv="*"
+svg="*"
+plotters="*"
 rand="*"
+lexical="*"
+markov="*"
+regex="*"
+heck="*"
+rust-bert="*"
+#autograd = { version = "1.0.2", features = ["mkl"] }
+#juice="*"
+#greenglas="*"
+linfa="*"
+strsim="*"
+probability="*"
+petgraph="*"
+triple_accel = "0.3.2"
+timely = "0.11.1"
+tokio={version="0.2", features=["full"]}
+reqwest="*"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bin]]
+name="main"
+path="./src/main.rs"
+
+[lib]
+name="main"
+path="./src/main.rs"
+
+[[bench]]
+name = "benchmark"
+harness = false
 
 [alias]
 t="test -- --nocapture"
+nc = "-- --nocapture"
