@@ -13,7 +13,6 @@ pub struct UserData {
 
 use super::*;
 
-#[test]
 pub fn evo_algo(gens: i32, rate: f32, verbose: bool) {
     let start = "Hello, world!".to_string();
     let targ ="Goodbye all!!".to_string();

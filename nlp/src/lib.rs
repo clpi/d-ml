@@ -5,6 +5,7 @@ use std::fs::File;
 pub mod gen;
 
 
+pub mod pipelines;
 
 #[cfg(test)]
 pub mod parse;

@@ -1081,27 +1081,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "linfa"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e045436376d7c2ae383c354cbd508b59b03f1ab7413320cb588200083312f0c"
-dependencies = [
- "linfa-clustering",
-]
-
-[[package]]
-name = "linfa-clustering"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e1c3c1233b969f3fc71a4d72a45e6360be0fc04f8d13c4944540f4419e92a519"
-dependencies = [
- "ndarray",
- "ndarray-rand",
- "ndarray-stats",
- "serde",
-]
-
-[[package]]
 name = "linked-hash-map"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1348,40 +1327,11 @@ version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ac06db03ec2f46ee0ecdca1a1c34a99c0d188a0d83439b84bf0cb4b386e4ab09"
 dependencies = [
- "approx",
  "matrixmultiply",
  "num-complex",
  "num-integer",
  "num-traits",
  "rawpointer",
- "rayon",
- "serde",
-]
-
-[[package]]
-name = "ndarray-rand"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04f32fec793307a7299dc1c05d2e9bda21d30b13b7e5bf9b9f8afec6ad6c3ce7"
-dependencies = [
- "ndarray",
- "rand 0.7.3",
- "rand_distr",
-]
-
-[[package]]
-name = "ndarray-stats"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e3da4b73160713dbd0f05af78d31e398b9a9edf70b8c94551f668477dc70618"
-dependencies = [
- "indexmap",
- "itertools 0.8.2",
- "ndarray",
- "noisy_float",
- "num-integer",
- "num-traits",
- "rand 0.7.3",
 ]
 
 [[package]]
@@ -1408,7 +1358,6 @@ dependencies = [
  "csv",
  "heck",
  "lexical",
- "linfa",
  "markov",
  "nalgebra",
  "nom",
@@ -1430,15 +1379,7 @@ dependencies = [
  "tokenizers",
  "tokio",
  "triple_accel",
-]
-
-[[package]]
-name = "noisy_float"
-version = "0.1.12"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1b3e1bd47a70dc23b4b1d4c7dabe09135cf86a5eb2ad5a60c853cb69c64d32e"
-dependencies = [
- "num-traits",
+ "url",
 ]
 
 [[package]]
